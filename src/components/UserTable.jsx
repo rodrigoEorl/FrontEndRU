@@ -36,8 +36,8 @@ const UserTable = () => {
     },
     {
       title: 'Nombre',
-      dataIndex: 'nombre',
-      key: 'nombre'
+      dataIndex: 'nombreCompleto',
+      key: 'nombreCompleto'
     },
     {
       title: 'Género',
