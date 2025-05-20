@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import UserTable from './components/UserTable';
+import 'antd/dist/antd.css';
 
 
 function App() {
