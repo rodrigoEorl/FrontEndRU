@@ -58,7 +58,7 @@ const UserTable = () => {
       title: 'Nacimiento',
       dataIndex: 'nacimiento',
       key: 'nacimiento',
-      render: (fecha) => new Date(fecha).toLocaleDateString()
+      render: (fecha) => new Date(Date.parse(fecha)).toLocaleDateString()
     }
   ];
 
