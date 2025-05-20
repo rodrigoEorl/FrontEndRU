@@ -20,16 +20,18 @@ const UserTable = () => {
 //     }
 //   };
 
-    useEffect(() => {
+
     const fetchUsers = async () => {
       try {
         const params = {  Results: 10 };
-        const response = await axios.get('https://localhost:7148/api/users', { params });
+        const response = await axios.get('https://localhost:7148/api/user', { params });
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
       }
     };
+
+    useEffect(() => {
 
     fetchUsers();
   }, []);
